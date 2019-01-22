@@ -1,7 +1,8 @@
 <ul>
 <% @patients.each do |patient| %>
-
+<ol>Date: <%= appointment.appointment_datetime %> </ol>
 <ol> Name: <%=link_to patient.name, patient_path(patient) %> </ol>
+
 <ol>  Number of Appointments: <%= patient.appointments.count %> </ol> <br>
 <% end %>
 </ul>
