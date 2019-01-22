@@ -2,7 +2,7 @@
 <P>
   Appointments:
   <%= @patient.appointments.each do |appointment| %>
-  Date: <%= appointment.appointment_datetime %>
+  Date: <%= appointment.appointment_datetime %> <br> 
     <%= link_to appointment.patient.name, patient_path(appointment.patient) %> <br> <br>
 
   <% end %>
