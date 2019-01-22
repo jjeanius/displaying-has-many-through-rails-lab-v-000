@@ -13,4 +13,3 @@ end
 #    params.require(:appointment).permit{(:doctor_id, :patient_id, :appointment_datetime)
 #
 #  end
-
