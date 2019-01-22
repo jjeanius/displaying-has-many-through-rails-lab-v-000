@@ -1,7 +1,7 @@
 <h2> <%= @patient.name %> </h2>
 <P>
   Appointments:
-  <%= @patient.appointments.each do |appointment| %>
+  <%= @patient.appointments.each do |i,appointment| %>
     <%= link_to appointment.patient.name, patient_path(appointment.patient) %> <br> <br>
 
   <% end %>
