@@ -17,4 +17,3 @@ end
 #    params.require(:doctor).permit(:name, :department, :appointment)
 #  end
 
-end
