@@ -2,7 +2,8 @@
   <%= link_to doctor.name.appointment, doctor_path %>
   <% end %>
 
-
+<% @doctor.appointments.each do |appointment| %>
+<%= link_to appointment.doctor.name, doctor_path %>
 
 
 <!--  <% @post.comments.each do |comment| %>
