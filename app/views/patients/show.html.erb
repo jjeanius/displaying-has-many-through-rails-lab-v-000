@@ -3,5 +3,5 @@
   Appointments:
   <%= @patient.appointments.each do |appointment| %>
     <%= link_to appointment.patient.name, patient_path(appointment.patient) %> <br> <br>
-    <%= link_to appointment.patient.doctor, doctor_path(appointment.patient) %>
+    <%= link_to appointment.patient.doctors, doctor_path(appointment.patient) %>
   <% end %>
