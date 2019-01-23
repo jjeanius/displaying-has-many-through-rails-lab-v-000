@@ -6,9 +6,9 @@
 
   <% @doctor.appointments.each do |appointment| %>
   <%= link_to appointment.patient.name, patient_path(appointment.patient) %>
-  <%= appointment.appointment_datetime %> <br> <br>
+  <%= appointment.appointment_datetime.strftime("%B %e, %Y at %H:%M") %> <br> <br>
   <% end %>
-
+ 
 
 <!-- it "shows all of a doctor's appointment times in a human readable format" do
   visit doctor_path(@meredith)
