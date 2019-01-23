@@ -2,6 +2,6 @@
 <P>
   Appointments:<br> <br>
   <%= @patient.appointments.each do |appointment| %>
-  Patient NAME: <%= link_to appointment, patient_path(appointment.patient) %> <br> <br>
+  Patient NAME: <%= link_to appointment.patient.name, patient_path %> <br> <br>
   <%= link_to appointment.patient.doctors.name, doctor_path(appointment.patient) %>
   <% end %>
