@@ -3,4 +3,3 @@
   Appointments:<br> <br>
   Patient NAME: <%=@patient.name %> <%= link_to appointment.patient.name.doctor, doctor_path(@patient) %> <br> <br>
   <%= appointment.appointment_datetime.strftime("%B %e, %Y at %H:%M") %> <br> <br>
-  <% end %>
