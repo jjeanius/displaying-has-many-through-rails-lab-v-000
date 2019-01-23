@@ -1,12 +1,18 @@
-<% @appointment.doctors each do |doctor| %>
-  <%= link_to doctor.name.appointment, doctor_path %>
-  <% end %>
 
 <% @doctor.appointments.each do |appointment| %>
 <%= link_to appointment.doctor.name, doctor_path %>
+<% end %>
 
 
 <!--  <% @post.comments.each do |comment| %>
   <%= link_to comment.user.username, user_path(comment.user) %> said
   <%= comment.content %>
-<% end %>  ->
+<% end %>  
+<% @appointment.doctors each do |doctor| %>
+  <%= link_to doctor.name.appointment, doctor_path %>
+  <% end %>
+
+
+
+
+->
